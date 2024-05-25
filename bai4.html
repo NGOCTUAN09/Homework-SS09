@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function swapCaseUsingArray(str) {
+    let charArray = str.split('');
+    for (let i = 0; i < charArray.length; i++) {
+        let char = charArray[i];
+        if (char === char.toLowerCase()) {
+            charArray[i] = char.toUpperCase();
+        }
+        else if (char === char.toUpperCase()) {
+            charArray[i] = char.toLowerCase();
+        }
+    }
+    return charArray.join('');
+}
+let inputString = 'Keep Calm And Code On';
+let outputString = swapCaseUsingArray(inputString);
+console.log(outputString); 
+
+    </script>
+</body>
+</html>
